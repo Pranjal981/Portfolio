@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranjal Shinde</title>
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="cssFiles/fronend.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -96,11 +97,26 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: shinde03pranjal@gmail.com</p>
-        
-            <p>LinkedIn:  <a href="https://www.linkedin.com/in/pranjal-shinde-12383b250" target="_blank">@pranjalshinde42</a>
-            </p>
-          </a>
+
+          <div class="container">
+            <h2>Any Suggesions get in touch </h2>
+            <form action="https://webserver-x995.onrender.com/submit/" method="POST" enctype="multipart/form-data">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="username" required>
+                <br>
+                <label for="email">Your Email:</label>
+                <input type="text" id="email" name="email" required>
+                <br>
+                <label for="query">Your Message:</label>
+                <textarea id="query" name="query" rows="4" required></textarea>
+                <br>
+                <label for="images">Upload Images:</label>
+                <input type="file" id="images" name="files" accept="image/*" multiple>
+                <br>
+                <button type="submit">submit</button>
+            </form>
+            <div id="message"></div>
+        </div>
     </section>
 
     
